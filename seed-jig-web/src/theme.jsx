@@ -10,6 +10,9 @@ const theme = createTheme({
     secondary: {
       main: "#ece3ca",
     },
+    default: {
+      main: "#000000",
+    },
   },
 });
 

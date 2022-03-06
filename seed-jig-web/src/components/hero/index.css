@@ -1,0 +1,21 @@
+.hero-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-inner {
+  padding: 0px 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-container {
+    width: 100vw;
+  }
+
+  .order-button-container {
+    display: flex;
+    justify-content: center;
+  }
+}

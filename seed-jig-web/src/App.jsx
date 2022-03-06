@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@mui/material/styles";
 import "./App.css";
-import Header from "./header/Header";
+import Header from "./components/header";
 import Home from "./pages/Home";
 import theme from "./theme";
 
