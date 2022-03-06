@@ -1,0 +1,15 @@
+:root {
+  --theme-brass: rgb(225, 193, 110);
+  --theme-brass-pale: rgb(236, 227, 202);
+  --theme-steel: rgb(113, 121, 126);
+  --theme-steel-pale: rgb(113, 121, 126, 0.2);
+  --theme-magnolia: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme-magnolia);
+}
