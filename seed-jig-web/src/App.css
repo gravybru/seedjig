@@ -3,12 +3,6 @@ p {
   font-weight: 500;
 }
 
-.routes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .padding {
   padding: 0 15vw;
 }

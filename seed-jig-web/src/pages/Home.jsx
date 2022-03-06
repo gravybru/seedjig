@@ -3,13 +3,14 @@ import { Button, Typography } from "@mui/material";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Home = () => {
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
 
   return (
-    <>
+    <div>
       <div className="hero-container">
         <div className="hero-text">
-          <Typography variant={width < 700 ? "h4" : "h3"}>
+          <Typography variant={width < 700 || height < 450 ? "h4" : "h3"}>
+            <br />
             Seed Jig 1.0
             <br />
             <br />
@@ -20,6 +21,8 @@ const Home = () => {
             Machined From <span style={{ fontWeight: 600 }}>
               Brass
             </span> And <span style={{ fontWeight: 600 }}>Steel</span>
+            <br />
+            <br />
           </Typography>
         </div>
       </div>
@@ -31,8 +34,7 @@ const Home = () => {
           </Typography>
         </Button>
       </div>
-      <div className="buffer" />
-    </>
+    </div>
   );
 };
 

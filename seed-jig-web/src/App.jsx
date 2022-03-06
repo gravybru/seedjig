@@ -8,9 +8,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <div className="routes">
-        <Home />
-      </div>
+      <Home />
     </ThemeProvider>
   );
 };
