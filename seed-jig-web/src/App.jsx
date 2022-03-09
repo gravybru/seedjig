@@ -1,14 +1,17 @@
-import { ThemeProvider } from "@mui/material/styles";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header";
-import Home from "./pages/Home";
+import ApplicationRouter from "./routes";
 import theme from "./theme";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      <Home />
+      <Router>
+        <Header />
+        <ApplicationRouter />
+      </Router>
     </ThemeProvider>
   );
 };

@@ -1,0 +1,4 @@
+.ticker-container {
+  border: solid var(--theme-steel-pale) 1px;
+  padding: 10px;
+}

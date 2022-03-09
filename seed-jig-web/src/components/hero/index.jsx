@@ -1,7 +1,10 @@
-import { Button, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { useHistory } from "react-router-dom";
 import "./index.css";
 
 const Hero = () => {
+  const { push } = useHistory();
   return (
     <div className="hero-container">
       <div className="hero-inner">
@@ -19,7 +22,14 @@ const Hero = () => {
           <br />
         </Typography>
         <div className="order-button-container">
-          <Button variant="outlined" color="default" size="large">
+          <Button
+            variant="outlined"
+            color="default"
+            size="large"
+            onClick={() => {
+              push("purchase");
+            }}
+          >
             <Typography>PRE ORDER</Typography>
           </Button>
         </div>

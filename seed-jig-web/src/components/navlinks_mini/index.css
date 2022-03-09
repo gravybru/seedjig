@@ -1,0 +1,9 @@
+.navlinks-mini {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.navlink-button-container {
+  border-bottom: solid var(--theme-steel-pale) 1px;
+}
