@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import NavLinks from "../navlinks";
 import NavLinksMini from "../navlinks_mini";
 import "./index.css";
-import logo from "../../images/logo.png";
+import logo from "/assets/logo.png";
 
 const Header = () => {
   let { push } = useHistory();
@@ -26,7 +26,7 @@ const Header = () => {
           <img className="logo" src={logo} alt="seed jig logo" />
           <div className="title-text">
             <Typography
-              variant="h2"
+              variant="h3"
               style={{ marginLeft: "40px", fontWeight: 600 }}
             >
               Seed Jig

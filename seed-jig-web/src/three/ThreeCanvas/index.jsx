@@ -4,18 +4,17 @@ import { OrbitControls } from "@react-three/drei";
 import { ErrorBoundary } from "react-error-boundary";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import JigModel from "../JigModel";
-import { Typography } from "@mui/material";
+import "./index.css";
 
 const ThreeCanvas = () => {
   const { width } = useWindowDimensions();
 
   const modelFrameStyles = {
     width: width < 700 ? "100vw" : "50vw",
-    height: "400px",
   };
 
   return (
-    <div style={modelFrameStyles}>
+    <div style={modelFrameStyles} className="canvas-fade">
       <ErrorBoundary
         FallbackComponent={() => (
           <div style={modelFrameStyles}>error loading seed jig model</div>
@@ -23,16 +22,14 @@ const ThreeCanvas = () => {
       >
         <Suspense fallback={<div style={modelFrameStyles}></div>}>
           <Canvas style={modelFrameStyles}>
-            <ambientLight intensity={0.3} />
-            <pointLight position={[10, 10, 5]} />
-            <OrbitControls makeDefault dampingFactor={0.3} />
+            <ambientLight intensity={0.2} />
+            <pointLight position={[5, 10, 5]} intensity={0.3} />
+            <pointLight position={[2, -10, 2]} intensity={0.2} />
+            <OrbitControls makeDefault dampingFactor={0.1} />
             <JigModel />
           </Canvas>
         </Suspense>
       </ErrorBoundary>
-      <Typography variant="caption" style={{ paddingLeft: "10px" }}>
-        Click / drag / zoom to explore
-      </Typography>
     </div>
   );
 };

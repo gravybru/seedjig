@@ -1,4 +1,24 @@
-.photo-carousel {
-  border: solid black 1px;
-  height: 250px;
+.carousel-root {
+  height: 60vh;
+}
+
+.carousel-slide {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-root,
+  .carousel-slide {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .carousel-root,
+  .carousel-slide {
+    height: 80vh;
+  }
 }

@@ -3,9 +3,7 @@ import PageFrame from "../../components/page_frame";
 
 const Contact = () => {
   return (
-    <PageFrame>
-      <Typography variant="h3">Contact</Typography>
-      <br />
+    <PageFrame title="Contact">
       <Typography>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
